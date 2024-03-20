@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variabler*/
 @font-face {
   font-family: "OpenSans-Regular";
@@ -7,7 +8,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "OpenSans-Regula";
+  font-family: "OpenSans-Regula,Serif";
 }
 
 body {
@@ -58,7 +59,7 @@ header {
     padding: 10px;
   }
 }
-/*fontpage styling*/
+/*frontpage styling*/
 .image-wrapper {
   max-width: 100%;
   max-height: 700px;
@@ -87,6 +88,28 @@ header {
   border: 2px solid #05A3AB;
   background-color: #fffafa;
   margin: 10px;
+}
+
+.articles-hundetræning-page {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 30px;
+  padding-top: 10px;
+}
+.articles-hundetræning-page img {
+  width: 100%;
+  padding: 20px;
+}
+.articles-hundetræning-page .blue-background {
+  background-color: #a9dfe1;
+}
+
+.dog-training {
+  font-size: 1.7rem;
+  color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
 }
 
 .articles {
@@ -267,45 +290,76 @@ header {
     padding-top: 35px;
     width: 50%;
   }
-  .articles {
-    gap: 30px;
-  }
-  .articles .articles-grid {
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 0 auto;
-    width: 100%;
-    padding-bottom: 30px;
-  }
-  .articles .articles-grid img {
-    padding: 20px;
-  }
-  .articles .articles-grid .articles-image {
-    width: 60%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-  }
-  .articles .articles-grid .heading {
-    font-size: 3rem;
+  .dog-training {
+    font-size: 2.5rem;
     color: #2e2e2e;
     display: flex;
     justify-content: center;
+    padding: 100px 10px 30px 10px;
   }
-  .articles .articles-grid p {
+  .articles-hundetræning-page {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 30px;
+    padding-top: 10px;
+  }
+  .articles-hundetræning-page img {
+    width: 73%;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .articles-hundetræning-page p {
     color: #2e2e2e;
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0 auto;
     padding-top: 35px;
-    max-width: 50%;
+    max-width: 70%;
   }
-  .articles .blue-background {
+  .blue-background {
     background-color: #a9dfe1;
   }
 }
+.articles {
+  gap: 30px;
+}
+.articles .articles-grid {
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.articles .articles-grid img {
+  padding: 20px;
+}
+.articles .articles-grid .articles-image {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.articles .articles-grid .heading {
+  font-size: 2.5rem;
+  color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+}
+.articles .articles-grid p {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 35px;
+  max-width: 50%;
+}
+.articles .blue-background {
+  background-color: #a9dfe1;
+}
+
 @media screen and (min-width: 771px) {
   /* sign up section*/
   .sign-up {

@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "OpenSans-Regula";
+  font-family: "OpenSans-Regula,Serif";
 }
 
 
@@ -57,7 +57,7 @@ header {
   }
 }
 
-/*fontpage styling*/
+/*frontpage styling*/
 
 .image-wrapper {
 
@@ -88,7 +88,25 @@ header {
     margin: 10px;
   }
 }
+.articles-hundetræning-page{
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 30px;
+  padding-top: 10px;
+  img {
+    width: 100%;
+    padding: 20px;
+  }
+  .blue-background {
+    background-color: partial.$lightblue;
 
+  }
+
+}
+.dog-training{
+  @include partial.heading-mobile;
+  padding: 30px 10px 30px 10px;
+}
 .articles {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -174,7 +192,7 @@ header {
     }
 
   }
-/* footer styling*/
+  /* footer styling*/
 
 }
 
@@ -190,21 +208,26 @@ header {
     height: 30px;
     margin: 5px;
   }
+
   aside:first-of-type {
     justify-self: left;
     margin-left: 15px;
   }
+
   aside:last-of-type {
     justify-self: right;
     margin-right: 15px;
   }
+
   a {
     @include partial.a-hover;
   }
-  p{
+
+  p {
     @include partial.p-Mobil;
   }
 }
+
 /*desktop version*/
 @media screen and (min-width: 771px) {
   .mobile-nav {
@@ -251,6 +274,36 @@ header {
     @include partial.p-desktop;
     width: 50%;
   }
+.dog-training{
+  @include partial.heading-desktop;
+  padding: 100px 10px 30px 10px;
+}
+  .articles-hundetræning-page{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 30px;
+    padding-top: 10px;
+
+    img {
+      width: 73%;
+      padding: 20px;
+     display: flex;
+      margin: 0 auto;
+    }
+    p {
+      @include partial.p-desktop;
+      max-width: 70%;
+    }
+
+    }
+    .blue-background {
+      background-color: partial.$lightblue;
+
+    }
+
+
+  }
+
   .articles {
     gap: 30px;
 
@@ -290,7 +343,7 @@ header {
 
     }
   }
-}
+
 
 @media screen and (min-width: 771px) {
 
@@ -344,11 +397,12 @@ header {
 
   }
 
-  .nav-footer{
+  .nav-footer {
     img {
       height: 42px;
     }
-    p{
+
+    p {
       @include partial.p-desktop;
     }
   }
