@@ -174,36 +174,36 @@ header {
 
   }
 /* footer styling*/
-  .mobile-nav-footer {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    height: 110px;
-    background-color: partial.$lightblue;
-    color: partial.$textColor;
-    bottom: 0;
 
-    img {
-      height: 35px;
-      margin: 10px;
-    }
-    aside:first-of-type {
-      justify-self: left;
-      margin-left: 15px;
-    }
-    aside:last-of-type {
-      justify-self: right;
-      margin-right: 15px;
-    }
-    a {
-      @include partial.a-hover;
-    }
-    p{
-      @include partial.p-Mobil;
-    }
-  }
 }
 
+.nav-footer {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  height: 110px;
+  background-color: partial.$lightblue;
+  color: partial.$textColor;
+  bottom: 0;
 
+  img {
+    height: 35px;
+    margin: 10px;
+  }
+  aside:first-of-type {
+    justify-self: left;
+    margin-left: 15px;
+  }
+  aside:last-of-type {
+    justify-self: right;
+    margin-right: 15px;
+  }
+  a {
+    @include partial.a-hover;
+  }
+  p{
+    @include partial.p-Mobil;
+  }
+}
 /*desktop version*/
 @media screen and (min-width: 771px) {
   .mobile-nav {

@@ -182,41 +182,42 @@ header {
     margin-top: 30px;
   }
   /* footer styling*/
-  .mobile-nav-footer {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    height: 110px;
-    background-color: #a9dfe1;
-    color: #2e2e2e;
-    bottom: 0;
-  }
-  .mobile-nav-footer img {
-    height: 35px;
-    margin: 10px;
-  }
-  .mobile-nav-footer aside:first-of-type {
-    justify-self: left;
-    margin-left: 15px;
-  }
-  .mobile-nav-footer aside:last-of-type {
-    justify-self: right;
-    margin-right: 15px;
-  }
-  .mobile-nav-footer a {
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .mobile-nav-footer a:hover {
-    color: #05A3AB;
-  }
-  .mobile-nav-footer p {
-    color: #2e2e2e;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 0 auto;
-    padding: 10px;
-  }
 }
+.nav-footer {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  height: 110px;
+  background-color: #a9dfe1;
+  color: #2e2e2e;
+  bottom: 0;
+}
+.nav-footer img {
+  height: 35px;
+  margin: 10px;
+}
+.nav-footer aside:first-of-type {
+  justify-self: left;
+  margin-left: 15px;
+}
+.nav-footer aside:last-of-type {
+  justify-self: right;
+  margin-right: 15px;
+}
+.nav-footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-footer a:hover {
+  color: #05A3AB;
+}
+.nav-footer p {
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 /*desktop version*/
 @media screen and (min-width: 771px) {
   .mobile-nav {
