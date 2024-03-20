@@ -1,8 +1,71 @@
 /* Variabler*/
 $lightblue: #a9dfe1;
+$darkerBlue: #05A3AB;
 $textColor: #2e2e2e;
 $bg: #fffafa;
+$cta: #84C662;
 
 
 
+
+
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("/font/Open_Sans/OpenSans-Regular.ttf");
+}
+
+
+@mixin p-Mobil {
+color: $textColor;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+@mixin p-desktop {
+  color: $textColor;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 35px;
+
+}
+
+@mixin heading-mobile {
+  font-size: 1.7rem;
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+
+}
+
+@mixin heading-desktop {
+  font-size: 3rem;
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin a-hover {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color:$darkerBlue;
+  }
+}
+
+@mixin btn($width:12.8rem, $height:3.5rem) {
+  background-color: $cta;
+  border-radius: 70px;
+  color: $bg;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  border: 0;
+  font-size: 18pt;
+  width: $width;
+  height: $height;
+}
 

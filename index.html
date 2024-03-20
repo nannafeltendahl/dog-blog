@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.scss">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Title</title>
 </head>
 <body>
 <header>
     <nav class="mobile-nav">
         <img class="navToggle bars icons" src="image/burgermenu.png" alt=" trykbar burgermenu ikon">
-        <a href="index.html"><img src="image/dogBlogLogo.png" alt="rundt dog blog logo med en hund"></a>
+        <a href="index.html"><img id="logo" src="image/dogBlogLogo.png" alt="rundt dog blog logo med en hund"></a>
 
     </nav>
     <nav class="desktop-nav">
@@ -21,79 +21,113 @@
             <li class="nav"><a href="#">Sundhedspleje</a></li>
             <li class="nav"><a href="#">Hunderacer</a></li>
         </ul>
-
     </nav>
 </header>
 
+<main>
+    <div class="image-wrapper">
+        <img class="font-page-img" src="image/fontPageImg.jpg" alt="hund i baggrunden med teksten vi elsker hunde">
+    </div>
+    <p class="home-welcome-text">Velkommen til Dog Blog, dit
+        online univers, hvor du finder viden, tips og råd om hundetræning, ernæring og sundhedspleje. Samt informationer
+        om forskellige typer hunderacer.
+    </p>
+    <form class="choose-subject">
+        <label class="visually-hidden" for="region"></label>
+        <select id="region" name="select">
+            <option value="0" selected disabled>Vælg emne</option>
+            <option value="#hundetræning">Hundetræning</option>
+            <option value="#ernæring">Ernæring</option>
+            <option value="#sundhed">Sundhedspleje</option>
+            <option value="#racer">Hunderacer</option>
+        </select>
+    </form>
+
+    <section class="articles">
+
+        <article class="blue-background articles-grid">
+            <p class="heading">Hundetræning: skab et stærkt bånd</p>
+            <img class="articles-image" src="image/dog-giving-high-five-his-pet-owner-park.jpg"
+                 alt="hund og dame der giver high five">
+            <p>At træne din hund er ikke kun en måde at lære den at sidde, blive ved din side eller gå pænt i snor. Det
+                er
+                også en mulighed for at styrke båndet mellem dig og din firbenede ven gennem tillid, forståelse og
+                effektiv
+                kommunikation<a href="#"> Læs mere...</a>
+            </p>
+
+        </article>
+
+        <article class="ernæring articles-grid">
+            <p class="heading">Ernæring: En sund mave, en glad hund</p>
+            <img class="articles-image" src="image/still-life-domestic-animal-food-composition.jpg" alt="hunde mad">
+            <p>
+                Når det kommer til at holde vores hunde glade og sunde, spiller ernæring en afgørende rolle. Ligegyldigt
+                om
+                din hund er en legesyg hvalp eller en kærlig senior, er det vigtigt at sikre, at den får den rette
+                balance
+                af næringsstoffer for at trives optimalt<a href="#"> Læs mere...</a>
+            </p>
+
+        </article>
+        <article class="blue-background articles-grid">
+            <p class="heading">Hunderacer: Udforsk mangfoldigheden</p>
+            <img class="articles-image" src="image/portrait-collection-adorable-puppies.jpg"
+                 alt="forskellige slags hundehvalpe">
+            <p>
+                Hunden er ikke blot menneskets bedste ven, men også en utroligt mangfoldig og fascinerende art med
+                hundreder
+                af forskellige racer. Hver race har sine egne karakteristika, personlighedstræk og historie, der gør dem
+                unikke og særlige på deres egen måde. Lad os udforske nogle af disse fantastiske racer og deres unikke
+                egenskaber<a href="#"> Læs mere...</a>
+            </p>
+
+        </article>
+        <article class=" articles-grid">
+            <p class="heading">Sundhedspleje: En sund firbenede ven</p>
+            <img class="articles-image" src="image/beautiful-pet-portrait-dog-with-food.jpg"
+                 alt="hunde med en bidepind">
+            <p>
+                At tage sig af vores firbenede venner indebærer mere end bare kærlighed og leg; det kræver også en
+                dedikeret
+                indsats for at opretholde deres sundhed og velvære. Ligesom os har hunde brug for regelmæssig
+                sundhedspleje
+                for at leve et langt og lykkeligt liv<a href="#"> Læs mere...</a>
+            </p>
+
+        </article>
+
+    </section>
+
+    <section class="sign-up">
+        <form class="booking-formular">
+            <div class="name-label">
+                <p>Navn</p>
+                <label class="visually-hidden" for="navn"></label>
+                <input placeholder="Navn" id="navn" type="text" required>
+            </div>
+            <div class="name-label">
+                <p>Efternavn</p>
+                <label class="visually-hidden" for="navn"></label>
+                <input placeholder="Navn" id="efternavn" type="text" required>
+            </div>
+
+            <div>
+                <p>Email</p>
+                <label class="visually-hidden" for="mail"></label>
+                <input placeholder="Email" id="mail" type="email">
+            </div>
+            <div class="column-span-4">
+                <input id="book-button" type="submit" name="submit" value="Book">
+            </div>
+
+        </form>
+
+    </section>
 
 
+</main>
 
 
-
-
-
-
-<footer>
-    <nav class="mobile-nav-footer">
-        <aside>
-            <p> Sociale Medier</p>
-
-            <a href="https://www.instagram.dk" target="_blank" rel="nofollow">
-                <img src="imagg/instagram.png" alt="instagram ikon">
-            </a>
-            <a href="https://www.linkedin.dk://" target="_blank" rel="nofollow">
-                <img src="image/linked.png" alt="linkedin ikon">
-            </a>
-            <a href="https://www.facebook.dk://" target="_blank" rel="nofollow">
-                <img src="image/facebook.png" alt="facebook ikon">
-            </a>
-        </aside>
-
-        <aside>
-            <p> Kontakt os</p>
-            <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
-                                                                                        alt="mobil ikon"></a>
-            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon"></a>
-
-        </aside>
-    </nav>
-
-    <nav class="desktop-nav-footer">
-        <section id="first-section">
-            <aside>
-                <p>MultiDesignStudio</p>
-                <img src="img/maskot-icon.png" alt="paefugl">
-            </aside>
-            <aside>
-                <p> Sociale medier</p>
-
-                <a href="https://www.instagram.dk" target="_blank" rel="nofollow">
-                    <img src="img/instagram.png" alt="instagram ikon">
-                </a>
-                <a href="https://www.linkedin.dk://" target="_blank" rel="nofollow">
-                    <img src="img/linked.png" alt="linkedin ikon">
-                </a>
-                <a href="https://www.facebook.dk://" target="_blank" rel="nofollow">
-                    <img src="img/facebook.png" alt="facebook ikon">
-                </a>
-            </aside>
-        </section>
-        <section id="second-section">
-            <p> Kontakt os</p>
-            <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
-                                                                                        alt="mobil ikon">+4521436587</a>
-            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon">
-                multidesign@studio.com</a>
-            <p>CVR-nr. 4386602</p>
-        </section>
-        <section id="third-section">
-            <p>Åbningstider</p>
-            <p>Man-Tor: 08:00-16:00</p>
-            <p>Fredag: 08:00-15:30</p>
-            <p>Lørdag-søn: Lukket</p>
-        </section>
-    </nav>
-
-</footer>
 </body>
 </html>

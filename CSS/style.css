@@ -1,8 +1,215 @@
 /* Variabler*/
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("/font/Open_Sans/OpenSans-Regular.ttf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "OpenSans-Regula";
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #fffafa;
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    border: 5px solid #05A3AB;
+    width: 100%;
+  }
+  .mobile-nav img:first-of-type {
+    justify-self: left;
+    padding: 30px 5px 0 15px;
+  }
+  .mobile-nav #logo {
+    justify-self: center;
+    padding: 5px;
+    width: 100px;
+  }
+  .articles-grid .heading {
+    font-size: 1.7rem;
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+  }
+  .articles-grid p {
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+/*fontpage styling*/
+.image-wrapper {
+  max-width: 100%;
+  max-height: 700px;
+  overflow: hidden;
+}
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-welcome-text {
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.choose-subject select {
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 5px;
+  border: 2px solid #05A3AB;
+  background-color: #fffafa;
+  margin: 10px;
+}
+
+.articles {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 30px;
+  padding-top: 10px;
+  /* sign-up formular*/
+}
+.articles a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #84C662;
+}
+.articles a:hover {
+  color: #05A3AB;
+}
+.articles .blue-background {
+  background-color: #a9dfe1;
+}
+.articles .articles-grid {
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+.articles .articles-grid img {
+  width: 100%;
+  padding: 20px;
+}
+.articles .articles-grid .articles-image {
+  max-width: 100%;
+  overflow: hidden;
+}
+.articles .sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #a9dfe1;
+  width: 290px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 30px;
+  font-size: 16pt;
+  box-shadow: 0 4px 8px #2c3e50;
+}
+
+/*desktop version*/
+@media screen and (min-width: 771px) {
+  .mobile-nav {
+    display: none;
+  }
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .desktop-nav {
+    display: block;
+    border: 5px solid #05A3AB;
+    width: 100%;
+  }
+  .desktop-nav ul {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+  }
+  .desktop-nav img {
+    padding: 5px;
+    width: 150px;
+  }
+  .desktop-nav .nav {
+    display: flex;
+    padding-top: 40px;
+  }
+  .desktop-nav a {
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    padding-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .desktop-nav a:hover {
+    color: #05A3AB;
+  }
+  .home-welcome-text {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 35px;
+  }
+  .articles {
+    gap: 30px;
+  }
+  .articles .articles-grid {
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .articles .articles-grid img {
+    padding: 20px;
+  }
+  .articles .articles-grid .articles-image {
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  .articles .articles-grid .heading {
+    font-size: 3rem;
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+  }
+  .articles .articles-grid p {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 35px;
+    max-width: 50%;
+  }
+  .articles .blue-background {
+    background-color: #a9dfe1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
