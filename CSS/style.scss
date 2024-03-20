@@ -7,11 +7,18 @@
   font-family: "OpenSans-Regula";
 }
 
+
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   background-color: partial.$bg;
+}
+header {
+  position: sticky;
+  top: 0;
+  height: 95px;
+  z-index: 100000;
 }
 
 
@@ -23,6 +30,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     border: 5px solid partial.$darkerBlue;
+    background-color: partial.$bg;
     width: 100%;
 
     img:first-of-type {
@@ -33,22 +41,24 @@ body {
 
     #logo {
       justify-self: center;
-    padding: 5px;
+      padding: 5px;
       width: 100px;
     }
   }
-.articles-grid {
-  .heading {
-    @include partial.heading-mobile;
-  }
-  p {
-    @include partial.p-Mobil
+  .articles-grid {
+    .heading {
+      @include partial.heading-mobile;
+    }
+
+    p {
+      @include partial.p-Mobil
+    }
   }
 }
-}
+
 /*fontpage styling*/
 
-.image-wrapper{
+.image-wrapper {
 
   max-width: 100%;
   max-height: 700px;
@@ -65,6 +75,7 @@ body {
   @include partial.p-Mobil;
   padding-bottom: 50px;
 }
+
 .choose-subject {
   select {
     color: partial.$textColor;
@@ -82,51 +93,85 @@ body {
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
   gap: 30px;
   padding-top: 10px;
-  a{
+
+  a {
     @include partial.a-hover;
     color: partial.$cta;
   }
-  .blue-background{
+
+  .blue-background {
     background-color: partial.$lightblue;
 
   }
 
-  .articles-grid{
+  .articles-grid {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     margin: 0 auto;
-    width:100%;
-
-
-  img{
     width: 100%;
-    padding: 20px;
-  }
-  .articles-image {
-    max-width: 100%;
-    overflow: hidden;
+
+
+    img {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .articles-image {
+      max-width: 100%;
+      overflow: hidden;
+    }
+
   }
 
 }
 
-  /* sign-up formular*/
-  .sign-up {
+@media screen and (min-width: 0px) and (max-width: 770px) {
+/* sign up section*/
+.sign-up {
+  background-color: partial.$darkerBlue;
+  padding: 30px;
+
+  .insider-knowledge-heading {
+    @include partial.heading-mobile;
+    padding: 10px;
+  }
+  .sign-up-text{
+    @include partial.p-Mobil;
+  }
+}
+
+.booking-formular {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
+  gap: 10px;
+  background-color: partial.$lightblue;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+
+  p {
+    @include partial.p-Mobil;
+    padding-left: 5%;
+  }
+
+  input {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: partial.$lightblue;
-    width: 290px;
-    height: 500px;
+    justify-content: center;
+    align-content: center;
     margin: 0 auto;
-    border-radius: 30px;
-    font-size: 16pt;
-    box-shadow: 0 4px 8px #2c3e50;
+    height: 50%;
+    width: 90%;
+    border: none;
+  }
+
+  #start-button {
+    @include partial.btn;
+    margin-top: 30px;
 
   }
 
 }
-
-
+}
 
 
 /*desktop version*/
@@ -141,6 +186,7 @@ body {
   .desktop-nav {
     display: block;
     border: 5px solid partial.$darkerBlue;
+    background-color: partial.$bg;
     width: 100%;
 
     ul {
@@ -172,6 +218,7 @@ body {
 
   .home-welcome-text {
     @include partial.p-desktop;
+    width: 50%;
   }
   .articles {
     gap: 30px;
@@ -213,5 +260,58 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 771px) {
+
+  /* sign up section*/
+  .sign-up {
+    background-color: partial.$darkerBlue;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .insider-knowledge-heading {
+    @include partial.p-desktop;
+    font-weight: bolder;
+    max-width: 50%;
+
+  }
+  .sign-up-text{
+    @include partial.p-desktop;
+    max-width: 50%;
+  }
+
+  .booking-formular {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
+    gap: 10px;
+    background-color: partial.$lightblue;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    p {
+      @include partial.p-desktop;
+      padding-left: 5%;
+    }
+
+    input {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 0 auto;
+      height: 50%;
+      width: 90%;
+      border: none;
+    }
+
+    #start-button {
+      @include partial.btn;
+      margin-top: 30px;
+
+    }
+
+  }
+}
+
 
 

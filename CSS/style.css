@@ -17,6 +17,13 @@ body {
   background-color: #fffafa;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  height: 95px;
+  z-index: 100000;
+}
+
 @media screen and (min-width: 0px) and (max-width: 770px) {
   .desktop-nav {
     display: none;
@@ -25,6 +32,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     border: 5px solid #05A3AB;
+    background-color: #fffafa;
     width: 100%;
   }
   .mobile-nav img:first-of-type {
@@ -86,7 +94,6 @@ body {
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
   gap: 30px;
   padding-top: 10px;
-  /* sign-up formular*/
 }
 .articles a {
   text-decoration: none;
@@ -113,19 +120,68 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
-.articles .sign-up {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #a9dfe1;
-  width: 290px;
-  height: 500px;
-  margin: 0 auto;
-  border-radius: 30px;
-  font-size: 16pt;
-  box-shadow: 0 4px 8px #2c3e50;
-}
 
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  /* sign up section*/
+  .sign-up {
+    background-color: #05A3AB;
+    padding: 30px;
+  }
+  .sign-up .insider-knowledge-heading {
+    font-size: 1.7rem;
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .sign-up .sign-up-text {
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .booking-formular {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
+    gap: 10px;
+    background-color: #a9dfe1;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  .booking-formular p {
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 5%;
+  }
+  .booking-formular input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 50%;
+    width: 90%;
+    border: none;
+  }
+  .booking-formular #start-button {
+    background-color: #84C662;
+    border-radius: 5px;
+    color: #fffafa;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border: 0;
+    font-size: 18pt;
+    width: 60%;
+    height: 30%;
+    box-shadow: 0 2px 10px #2e2e2e;
+    margin-top: 30px;
+  }
+}
 /*desktop version*/
 @media screen and (min-width: 771px) {
   .mobile-nav {
@@ -138,6 +194,7 @@ body {
   .desktop-nav {
     display: block;
     border: 5px solid #05A3AB;
+    background-color: #fffafa;
     width: 100%;
   }
   .desktop-nav ul {
@@ -171,6 +228,7 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     padding-top: 35px;
+    width: 50%;
   }
   .articles {
     gap: 30px;
@@ -209,6 +267,71 @@ body {
   }
   .articles .blue-background {
     background-color: #a9dfe1;
+  }
+}
+@media screen and (min-width: 771px) {
+  /* sign up section*/
+  .sign-up {
+    background-color: #05A3AB;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .insider-knowledge-heading {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 35px;
+    font-weight: bolder;
+    max-width: 50%;
+  }
+  .sign-up-text {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 35px;
+    max-width: 50%;
+  }
+  .booking-formular {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
+    gap: 10px;
+    background-color: #a9dfe1;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  .booking-formular p {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-left: 5%;
+  }
+  .booking-formular input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 50%;
+    width: 90%;
+    border: none;
+  }
+  .booking-formular #start-button {
+    background-color: #84C662;
+    border-radius: 5px;
+    color: #fffafa;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border: 0;
+    font-size: 18pt;
+    width: 60%;
+    height: 30%;
+    box-shadow: 0 2px 10px #2e2e2e;
+    margin-top: 30px;
   }
 }
 
