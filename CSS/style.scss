@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   background-color: partial.$bg;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -126,51 +127,80 @@ header {
 }
 
 @media screen and (min-width: 0px) and (max-width: 770px) {
-/* sign up section*/
-.sign-up {
-  background-color: partial.$darkerBlue;
-  padding: 30px;
+  /* sign up section*/
+  .sign-up {
+    background-color: partial.$darkerBlue;
+    padding: 30px;
 
-  .insider-knowledge-heading {
-    @include partial.heading-mobile;
-    padding: 10px;
-  }
-  .sign-up-text{
-    @include partial.p-Mobil;
-  }
-}
+    .insider-knowledge-heading {
+      @include partial.heading-mobile;
+      padding: 10px;
+    }
 
-.booking-formular {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
-  gap: 10px;
-  background-color: partial.$lightblue;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 15px;
-
-  p {
-    @include partial.p-Mobil;
-    padding-left: 5%;
+    .sign-up-text {
+      @include partial.p-Mobil;
+    }
   }
 
-  input {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  .booking-formular {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 2fr;
+    gap: 10px;
+    background-color: partial.$lightblue;
+    width: 100%;
     margin: 0 auto;
-    height: 50%;
-    width: 90%;
-    border: none;
+    border-radius: 15px;
+
+    p {
+      @include partial.p-Mobil;
+      padding-left: 5%;
+    }
+
+    input {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 0 auto;
+      height: 50%;
+      width: 90%;
+      border: none;
+    }
+
+    #start-button {
+      @include partial.btn;
+      margin-top: 30px;
+
+    }
+
   }
+/* footer styling*/
+  .mobile-nav-footer {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    height: 110px;
+    background-color: partial.$lightblue;
+    color: partial.$textColor;
+    bottom: 0;
 
-  #start-button {
-    @include partial.btn;
-    margin-top: 30px;
-
+    img {
+      height: 35px;
+      margin: 10px;
+    }
+    aside:first-of-type {
+      justify-self: left;
+      margin-left: 15px;
+    }
+    aside:last-of-type {
+      justify-self: right;
+      margin-right: 15px;
+    }
+    a {
+      @include partial.a-hover;
+    }
+    p{
+      @include partial.p-Mobil;
+    }
   }
-
-}
 }
 
 
@@ -275,7 +305,7 @@ header {
     max-width: 50%;
 
   }
-  .sign-up-text{
+  .sign-up-text {
     @include partial.p-desktop;
     max-width: 50%;
   }
