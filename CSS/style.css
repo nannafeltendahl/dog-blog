@@ -166,6 +166,7 @@ header {
     height: 50%;
     width: 90%;
     border: none;
+    font-size: 1.2rem;
   }
   .booking-formular #start-button {
     background-color: #84C662;
@@ -186,14 +187,14 @@ header {
 .nav-footer {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  height: 110px;
+  height: auto;
   background-color: #a9dfe1;
   color: #2e2e2e;
   bottom: 0;
 }
 .nav-footer img {
-  height: 35px;
-  margin: 10px;
+  height: 30px;
+  margin: 5px;
 }
 .nav-footer aside:first-of-type {
   justify-self: left;
@@ -354,6 +355,7 @@ header {
     height: 50%;
     width: 90%;
     border: none;
+    font-size: 1.5rem;
   }
   .booking-formular #start-button {
     background-color: #84C662;
@@ -368,6 +370,16 @@ header {
     height: 30%;
     box-shadow: 0 2px 10px #2e2e2e;
     margin-top: 30px;
+  }
+  .nav-footer img {
+    height: 42px;
+  }
+  .nav-footer p {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 35px;
   }
 }
 

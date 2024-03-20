@@ -164,6 +164,7 @@ header {
       height: 50%;
       width: 90%;
       border: none;
+      font-size: 1.2rem;
     }
 
     #start-button {
@@ -180,14 +181,14 @@ header {
 .nav-footer {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  height: 110px;
+  height: auto;
   background-color: partial.$lightblue;
   color: partial.$textColor;
   bottom: 0;
 
   img {
-    height: 35px;
-    margin: 10px;
+    height: 30px;
+    margin: 5px;
   }
   aside:first-of-type {
     justify-self: left;
@@ -332,6 +333,7 @@ header {
       height: 50%;
       width: 90%;
       border: none;
+      font-size: 1.5rem;
     }
 
     #start-button {
@@ -340,6 +342,15 @@ header {
 
     }
 
+  }
+
+  .nav-footer{
+    img {
+      height: 42px;
+    }
+    p{
+      @include partial.p-desktop;
+    }
   }
 }
 
