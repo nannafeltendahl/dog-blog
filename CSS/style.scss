@@ -34,6 +34,7 @@ header {
     background-color: partial.$bg;
     width: 100%;
 
+
     img:first-of-type {
       justify-self: left;
       padding: 30px 5px 0 15px;
@@ -247,6 +248,7 @@ header {
   p {
     @include partial.p-Mobil;
   }
+
 }
 
 /*desktop version*/
