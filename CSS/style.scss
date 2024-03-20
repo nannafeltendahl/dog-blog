@@ -1,2 +1,12 @@
-@import "partial";
+@use "partial";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 
