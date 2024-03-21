@@ -15,7 +15,8 @@
     </nav>
     <nav class="desktop-nav">
         <ul>
-            <li><a href="index.html"><img class="logo-desktop" src="image/dogBlogLogo.png" alt="rundt dog blog logo med en hund"></a></li>
+            <li><a href="index.html"><img class="logo-desktop" src="image/dogBlogLogo.png"
+                                          alt="rundt dog blog logo med en hund"></a></li>
             <li class="nav"><a href="hundetræning.html">Hundetræning</a></li>
             <li class="nav"><a href="#">Ernæring</a></li>
             <li class="nav"><a href="#">Sundhedspleje</a></li>
@@ -36,15 +37,15 @@
         <label class="visually-hidden" for="region"></label>
         <select id="region" name="select">
             <option value="0" selected disabled>Vælg emne</option>
-            <option value="#hundetræning">Hundetræning</option>
-            <option value="#ernæring">Ernæring</option>
-            <option value="#sundhed">Sundhedspleje</option>
-            <option value="#racer">Hunderacer</option>
+            <option value="hundetræning">Hundetræning</option>
+            <option value="ernæring">Ernæring</option>
+            <option value="sundhed">Sundhedspleje</option>
+            <option value="racer">Hunderacer</option>
         </select>
     </form>
 
     <section class="articles">
-        <article class="blue-background articles-grid">
+        <article id="hundetræning" class="blue-background articles-grid">
             <p class="heading">Hundetræning: skab et stærkt bånd</p>
             <img class="articles-image" src="image/dog-giving-high-five-his-pet-owner-park.jpg"
                  alt="hund og dame der giver high five">
@@ -52,12 +53,12 @@
                 er
                 også en mulighed for at styrke båndet mellem dig og din firbenede ven gennem tillid, forståelse og
                 effektiv
-                kommunikation<a href="#"> Læs mere...</a>
+                kommunikation<a href="hundetræning.html"> Læs mere...</a>
             </p>
 
         </article>
 
-        <article class="ernæring articles-grid">
+        <article id="ernæring" class="ernæring articles-grid">
             <p class="heading">Ernæring: En sund mave, en glad hund</p>
             <img class="articles-image" src="image/still-life-domestic-animal-food-composition.jpg" alt="hunde mad">
             <p>
@@ -69,7 +70,7 @@
             </p>
 
         </article>
-        <article class="blue-background articles-grid">
+        <article id="sundhed" class="blue-background articles-grid">
             <p class="heading">Hunderacer: Udforsk mangfoldigheden</p>
             <img class="articles-image" src="image/portrait-collection-adorable-puppies.jpg"
                  alt="forskellige slags hundehvalpe">
@@ -78,11 +79,11 @@
                 hundreder
                 af forskellige racer. Hver race har sine egne karakteristika, personlighedstræk og historie, der gør dem
                 unikke og særlige på deres egen måde. Lad os udforske nogle af disse fantastiske racer og deres unikke
-                egenskaber<a href="#"> Læs mere...</a>
+                egenskaber<a href="hunderacer.html"> Læs mere...</a>
             </p>
 
         </article>
-        <article class=" articles-grid">
+        <article id="racer" class=" articles-grid">
             <p class="heading">Sundhedspleje: En sund firbenede ven</p>
             <img class="articles-image" src="image/beautiful-pet-portrait-dog-with-food.jpg"
                  alt="hunde med en bide pind">
@@ -109,7 +110,7 @@
             <div class="name-label">
                 <p>Efternavn</p>
                 <label class="visually-hidden" for="efternavn"></label>
-                <input placeholder="efternavn" id="efternavn" type="text" required>
+                <input placeholder="Efternavn" id="efternavn" type="text" required>
             </div>
 
             <div>

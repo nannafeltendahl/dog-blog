@@ -9,25 +9,39 @@
 <body>
 <header>
     <nav class="mobile-nav">
-        <img class="navToggle bars icons" src="image/burgermenu.png" alt=" trykbar burgermenu ikon">
+        <img class="toggle-nav" src="image/burgermenu.png" alt=" trykbar burgermenu ikon">
         <a href="index.html"><img id="logo" src="image/dogBlogLogo.png" alt="rundt dog blog logo med en hund"></a>
 
     </nav>
     <nav class="desktop-nav">
         <ul>
-            <li><a href="index.html"><img src="image/dogBlogLogo.png" alt="rundt dog blog logo med en hund"></a></li>
+            <li><a href="index.html"><img class="logo-desktop" src="image/dogBlogLogo.png"
+                                          alt="rundt dog blog logo med en hund"></a></li>
             <li class="nav"><a href="hundetræning.html">Hundetræning</a></li>
             <li class="nav"><a href="#">Ernæring</a></li>
             <li class="nav"><a href="#">Sundhedspleje</a></li>
-            <li class="nav"><a href="index.html">Forside</a></li>
+            <li class="nav"><a href="hunderacer.html">Hunderacer</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <h1 class="dog-training"> Forskellige hunderacer og deres unikke egenskaber</h1>
+
+    <form class="choose-subject">
+        <label class="visually-hidden" for="region"></label>
+        <select id="region" name="select">
+            <option value="0" selected disabled>Vælg race</option>
+            <option value="labrador">Labrador</option>
+            <option value="goldenRetriever">Golden Retriever</option>
+            <option value="germanShepherd">German Shepherd</option>
+            <option value="pomeranian">Pomeranian</option>
+            <option value="siberianHusky">Siberian Husky</option>
+        </select>
+    </form>
+
     <section class="articles">
-        <article class="blue-background articles-grid">
-            <p class="heading">labrador</p>
+        <article id="labrador" class="blue-background articles-grid">
+            <p class="heading">Labrador</p>
             <img class="articles-image" src="image/selective-focus-shot-black-labrador-retriever.jpg"
                  alt="sort labrador">
             <p>Kendt for deres venlige og udadvendte natur, er Labrador Retrievere en af de mest populære hunderacer i
@@ -37,7 +51,7 @@
 
         </article>
 
-        <article class="articles-grid">
+        <article id="goldenRetriever" class="articles-grid">
             <p class="heading">Golden Retriever</p>
             <img class="articles-image" src="image/selective-focus-shot-adorable-golden-retriever-outdoors.jpg"
                  alt="golden retriever">
@@ -48,7 +62,7 @@
             </p>
 
         </article>
-        <article class="blue-background articles-grid">
+        <article id="germanShepherd" class="blue-background articles-grid">
             <p class="heading">German Shepherd</p>
             <img class="articles-image" src="image/dog-german-shepherd-lying-grass-park.jpg"
                  alt="german shepherd">
@@ -59,7 +73,7 @@
             </p>
 
         </article>
-        <article class=" articles-grid">
+        <article id="pomeranian" class=" articles-grid">
             <p class="heading">Pomeranian</p>
             <img class="articles-image" src="image/animal-cute-spitz.jpg"
                  alt="pomeranian">
@@ -69,7 +83,7 @@
                 gør dem til populære kæledyr for både enkeltpersoner og familier.
             </p>
         </article>
-        <article class="blue-background articles-grid">
+        <article id="siberianHusky" class="blue-background articles-grid">
             <p class="heading">Siberian Husky</p>
             <img class="articles-image" src="image/cute-husky-snow-outdoors.jpg"
                  alt="Siberian Husky">
@@ -117,6 +131,7 @@
 
     </nav>
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+<script src="index.js" charset="UTF-8"></script>
 </body>
 </html>

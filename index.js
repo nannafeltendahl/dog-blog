@@ -5,3 +5,13 @@ $(document).ready(function () {
     });
 
 });
+$(document).ready(function(){
+    $('#region').change(function(){
+        var selectedValue = $(this).val();
+
+        // Scroll to the selected section
+        $('html, body').animate({
+            scrollTop: $('#' + selectedValue).offset().top
+        }, 1000);
+    });
+});
