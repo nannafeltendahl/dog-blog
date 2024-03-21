@@ -26,6 +26,21 @@ header {
 @media screen and (min-width: 0px) and (max-width: 770px) {
   .desktop-nav {
     display: none;
+    background-color: partial.$darkerBlue;
+    padding: 10px;
+
+    .logo-desktop{
+      display: none;
+    }
+    li{
+      list-style: none;
+    }
+a{
+  color: partial.$textColor;
+  @include partial.p-Mobil;
+  @include partial.a-hover;
+}
+
   }
   .mobile-nav {
     display: grid;

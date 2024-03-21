@@ -28,6 +28,27 @@ header {
 @media screen and (min-width: 0px) and (max-width: 770px) {
   .desktop-nav {
     display: none;
+    background-color: #05A3AB;
+    padding: 10px;
+  }
+  .desktop-nav .logo-desktop {
+    display: none;
+  }
+  .desktop-nav li {
+    list-style: none;
+  }
+  .desktop-nav a {
+    color: #2e2e2e;
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .desktop-nav a:hover {
+    color: #84C662;
   }
   .mobile-nav {
     display: grid;
@@ -126,7 +147,7 @@ header {
   color: #84C662;
 }
 .articles a:hover {
-  color: #05A3AB;
+  color: #84C662;
 }
 .articles .blue-background {
   background-color: #a9dfe1;
@@ -248,7 +269,7 @@ header {
   cursor: pointer;
 }
 .nav-footer a:hover {
-  color: #05A3AB;
+  color: #84C662;
 }
 .nav-footer p {
   color: #2e2e2e;
@@ -296,7 +317,7 @@ header {
     cursor: pointer;
   }
   .desktop-nav a:hover {
-    color: #05A3AB;
+    color: #84C662;
   }
   .home-welcome-text {
     color: #2e2e2e;
